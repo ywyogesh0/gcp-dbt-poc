@@ -1,7 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
-      - build
+      - 'build'
+      - '-f'
+      - 'dbt_poc/Dockerfile'
       - '-t'
       - 'europe-west2-docker.pkg.dev/sturdy-practice-245323/dbt-poc/dbt-bigquery:v1'
       - '.'
