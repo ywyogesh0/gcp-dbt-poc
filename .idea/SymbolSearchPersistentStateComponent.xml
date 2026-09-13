@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SymbolSearchPersistentStateComponent">
+    <option name="entries">
+      <map>
+        <entry key="$PROJECT_DIR$/poc/1-composer/dbt_poc_dag.py">
+          <value>
+            <FileEntry>
+              <option name="meta">
+                <FileMeta>
+                  <option name="timeStamp" value="1789298552963" />
+                  <option name="hash" value="-1330996384" />
+                </FileMeta>
+              </option>
+            </FileEntry>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Library/Caches/JetBrains/IdeaIC2023.3/httpFileSystem/catalog.json">
+          <value>
+            <FileEntry>
+              <option name="meta">
+                <FileMeta>
+                  <option name="timeStamp" value="1789192275417" />
+                  <option name="hash" value="-174540331" />
+                </FileMeta>
+              </option>
+            </FileEntry>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Library/Caches/JetBrains/IdeaIC2023.3/httpFileSystem/catalog1.json">
+          <value>
+            <FileEntry>
+              <option name="meta">
+                <FileMeta>
+                  <option name="timeStamp" value="1789182724262" />
+                  <option name="hash" value="-174540331" />
+                </FileMeta>
+              </option>
+            </FileEntry>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

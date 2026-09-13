@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: source
+    database: sturdy-practice-245323
+    schema: dbt_poc
+
+    tables:
+      - name: table_a

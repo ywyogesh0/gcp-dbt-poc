@@ -1,0 +1,13 @@
+dbt_poc:
+
+  target: dev
+
+  outputs:
+
+    dev:
+      type: bigquery
+      method: oauth
+      project: sturdy-practice-245323
+      dataset: dbt_poc
+      location: europe-west2
+      threads: 2

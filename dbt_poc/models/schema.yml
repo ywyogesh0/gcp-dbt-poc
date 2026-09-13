@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: transform_table_b
+    description: "Curated customer transaction table"
+
+    columns:
+
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_name
+        tests:
+          - not_null
+
+      - name: final_amount
+        tests:
+          - not_null

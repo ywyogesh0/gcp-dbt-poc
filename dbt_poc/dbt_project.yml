@@ -1,0 +1,11 @@
+name: 'dbt_poc'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_poc'
+
+model-paths: ["models"]
+
+models:
+  dbt_poc:
+    +materialized: table
