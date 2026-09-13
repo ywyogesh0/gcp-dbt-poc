@@ -6,7 +6,7 @@ steps:
       - 'dbt_poc/Dockerfile'
       - '-t'
       - 'europe-west2-docker.pkg.dev/sturdy-practice-245323/dbt-poc/dbt-bigquery:v1'
-      - '.'
+      - 'dbt_poc'
 
 images:
   - 'europe-west2-docker.pkg.dev/sturdy-practice-245323/dbt-poc/dbt-bigquery:v1'
