@@ -21,3 +21,4 @@ SELECT
 FROM {{ source('source', 'table_a') }}
 
 WHERE transaction_amount > 0
+    AND DATE(transaction_timestamp) = DATE('{{ var("processing_date") }}')

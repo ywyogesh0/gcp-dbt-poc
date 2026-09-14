@@ -10,4 +10,4 @@ COPY . .
 
 ENV DBT_PROFILES_DIR=/app
 
-CMD ["dbt", "build", "--select", "transform_table_b"]
+CMD ["dbt", "build"]
