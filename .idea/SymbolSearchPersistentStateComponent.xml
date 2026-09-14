@@ -3,6 +3,18 @@
   <component name="SymbolSearchPersistentStateComponent">
     <option name="entries">
       <map>
+        <entry key="$PROJECT_DIR$/poc/1-2-composer-cloud_run/dbt_cloud_run_dag.py">
+          <value>
+            <FileEntry>
+              <option name="meta">
+                <FileMeta>
+                  <option name="timeStamp" value="1789426527218" />
+                  <option name="hash" value="-2134755263" />
+                </FileMeta>
+              </option>
+            </FileEntry>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/poc/1-composer/dbt_poc_dag.py">
           <value>
             <FileEntry>
