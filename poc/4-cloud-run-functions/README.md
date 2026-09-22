@@ -118,7 +118,7 @@ gcloud services enable \
     artifactregistry.googleapis.com
 ```
 
-Cloud Run functions use Eventarc for event-driven invocation patterns. [Google Cloud event-driven functions documentation](https://cloud.google.com/run/docs/triggering/trigger-functions-with-events?utm_source=chatgpt.com)
+Cloud Run functions use Eventarc for event-driven invocation patterns.
 
 ---
 
@@ -128,14 +128,14 @@ For example:
 
 ```bash
 gcloud storage buckets create \
-    gs://YOUR_PROJECT_ID-dbt-poc-landing \
+    gs://sturdy-practice-245323-dbt-poc-landing \
     --location=europe-west2
 ```
 
 Our event source becomes:
 
 ```text
-YOUR_PROJECT_ID-dbt-poc-landing
+sturdy-practice-245323-dbt-poc-landing
                │
                └── Object finalized
                          │
@@ -161,7 +161,7 @@ gcloud iam service-accounts create dbt-trigger \
 Result:
 
 ```text
-dbt-trigger@YOUR_PROJECT_ID.iam.gserviceaccount.com
+dbt-trigger@sturdy-practice-245323.iam.gserviceaccount.com
 ```
 
 Our IAM architecture now becomes:
@@ -229,7 +229,7 @@ import functions_framework
 from google.cloud import run_v2
 
 
-PROJECT_ID = "YOUR_PROJECT_ID"
+PROJECT_ID = "sturdy-practice-245323"
 REGION = "europe-west2"
 JOB_NAME = "dbt-bigquery-job"
 
@@ -297,7 +297,7 @@ gcloud run deploy dbt-trigger-function \
     --function=trigger_dbt \
     --base-image=python312 \
     --region=europe-west2 \
-    --service-account=dbt-trigger@YOUR_PROJECT_ID.iam.gserviceaccount.com
+    --service-account=dbt-trigger@sturdy-practice-245323.iam.gserviceaccount.com
 ```
 
 Then create/configure the Cloud Storage Eventarc trigger according to the current Cloud Run function deployment flow.
@@ -311,7 +311,7 @@ google.cloud.storage.object.v1.finalized
 for:
 
 ```text
-YOUR_PROJECT_ID-dbt-poc-landing
+sturdy-practice-245323-dbt-poc-landing
 ```
 
 Google documents Cloud Storage `object.v1.finalized` as the event emitted when an object is created/finalised. [Cloud Storage Eventarc events](https://cloud.google.com/eventarc/docs/event-types?utm_source=chatgpt.com)
@@ -325,7 +325,7 @@ Upload:
 ```bash
 gcloud storage cp \
     transactions_2026-09-18.csv \
-    gs://YOUR_PROJECT_ID-dbt-poc-landing/
+    gs://sturdy-practice-245323-dbt-poc-landing/
 ```
 
 Now watch the chain:
